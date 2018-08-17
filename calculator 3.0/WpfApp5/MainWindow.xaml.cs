@@ -123,7 +123,7 @@ namespace WpfApp5
                             }
                             else if (formula[i] == ')')
                             {
-                                // pop until ')'
+                                
                                 char tempSign;
                                 while (true)
                                 {
@@ -177,7 +177,7 @@ namespace WpfApp5
                     objType = GetTheTypeOfObj(postfixExpressionQueue.Peek());
                     switch (objType)
                     {
-                        case 0:                 // if is a number, save to tempStack
+                        case 0:                
                             GetTheConquenceStack.Push(Convert.ToDouble(postfixExpressionQueue.Dequeue()));
                             break;
                         case 1:
