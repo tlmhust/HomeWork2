@@ -85,7 +85,6 @@ namespace WpfApp5
             {
                 streamWriter.Write(a);
             }
-
             streamWriter.Close();
         }
         private void Button_equ_Click(object sender, RoutedEventArgs e)

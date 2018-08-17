@@ -23,3 +23,28 @@ c:\users\谭力铭\source\repos\WpfApp5\WpfApp5\bin\Debug\MahApps.Metro.pdb
 c:\users\谭力铭\source\repos\WpfApp5\WpfApp5\bin\Debug\MahApps.Metro.xml
 c:\users\谭力铭\source\repos\WpfApp5\WpfApp5\obj\Debug\WpfApp5.csproj.CopyComplete
 c:\users\谭力铭\source\repos\WpfApp5\WpfApp5\obj\Debug\App.baml
+C:\Users\谭力铭\Desktop\新建文件夹 (2)\HomeWork2\calculator 3.0\WpfApp5\bin\Debug\WpfApp5.exe.config
+C:\Users\谭力铭\Desktop\新建文件夹 (2)\HomeWork2\calculator 3.0\WpfApp5\bin\Debug\WpfApp5.exe
+C:\Users\谭力铭\Desktop\新建文件夹 (2)\HomeWork2\calculator 3.0\WpfApp5\bin\Debug\WpfApp5.pdb
+C:\Users\谭力铭\Desktop\新建文件夹 (2)\HomeWork2\calculator 3.0\WpfApp5\bin\Debug\ControlzEx.dll
+C:\Users\谭力铭\Desktop\新建文件夹 (2)\HomeWork2\calculator 3.0\WpfApp5\bin\Debug\MahApps.Metro.dll
+C:\Users\谭力铭\Desktop\新建文件夹 (2)\HomeWork2\calculator 3.0\WpfApp5\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\谭力铭\Desktop\新建文件夹 (2)\HomeWork2\calculator 3.0\WpfApp5\bin\Debug\ControlzEx.pdb
+C:\Users\谭力铭\Desktop\新建文件夹 (2)\HomeWork2\calculator 3.0\WpfApp5\bin\Debug\MahApps.Metro.pdb
+C:\Users\谭力铭\Desktop\新建文件夹 (2)\HomeWork2\calculator 3.0\WpfApp5\bin\Debug\MahApps.Metro.xml
+C:\Users\谭力铭\Desktop\新建文件夹 (2)\HomeWork2\calculator 3.0\WpfApp5\obj\Debug\WpfApp5.csprojAssemblyReference.cache
+C:\Users\谭力铭\Desktop\新建文件夹 (2)\HomeWork2\calculator 3.0\WpfApp5\obj\Debug\Resources\Icons.baml
+C:\Users\谭力铭\Desktop\新建文件夹 (2)\HomeWork2\calculator 3.0\WpfApp5\obj\Debug\Resources\IconsNonShared.baml
+C:\Users\谭力铭\Desktop\新建文件夹 (2)\HomeWork2\calculator 3.0\WpfApp5\obj\Debug\MainWindow.g.cs
+C:\Users\谭力铭\Desktop\新建文件夹 (2)\HomeWork2\calculator 3.0\WpfApp5\obj\Debug\App.g.cs
+C:\Users\谭力铭\Desktop\新建文件夹 (2)\HomeWork2\calculator 3.0\WpfApp5\obj\Debug\WpfApp5_MarkupCompile.cache
+C:\Users\谭力铭\Desktop\新建文件夹 (2)\HomeWork2\calculator 3.0\WpfApp5\obj\Debug\WpfApp5_MarkupCompile.lref
+C:\Users\谭力铭\Desktop\新建文件夹 (2)\HomeWork2\calculator 3.0\WpfApp5\obj\Debug\App.baml
+C:\Users\谭力铭\Desktop\新建文件夹 (2)\HomeWork2\calculator 3.0\WpfApp5\obj\Debug\MainWindow.baml
+C:\Users\谭力铭\Desktop\新建文件夹 (2)\HomeWork2\calculator 3.0\WpfApp5\obj\Debug\WpfApp5.g.resources
+C:\Users\谭力铭\Desktop\新建文件夹 (2)\HomeWork2\calculator 3.0\WpfApp5\obj\Debug\WpfApp5.Properties.Resources.resources
+C:\Users\谭力铭\Desktop\新建文件夹 (2)\HomeWork2\calculator 3.0\WpfApp5\obj\Debug\WpfApp5.csproj.GenerateResource.cache
+C:\Users\谭力铭\Desktop\新建文件夹 (2)\HomeWork2\calculator 3.0\WpfApp5\obj\Debug\WpfApp5.csproj.CoreCompileInputs.cache
+C:\Users\谭力铭\Desktop\新建文件夹 (2)\HomeWork2\calculator 3.0\WpfApp5\obj\Debug\WpfApp5.csproj.CopyComplete
+C:\Users\谭力铭\Desktop\新建文件夹 (2)\HomeWork2\calculator 3.0\WpfApp5\obj\Debug\WpfApp5.exe
+C:\Users\谭力铭\Desktop\新建文件夹 (2)\HomeWork2\calculator 3.0\WpfApp5\obj\Debug\WpfApp5.pdb
