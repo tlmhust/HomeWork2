@@ -1,37 +1,71 @@
-# 计算器
-## 1.版本更新
-### (1)1.0版本
-#### 1.能够进行二元计算.&nbsp;&nbsp;2.存在历史纪录功能.
-### (2)2.0版本
-#### 1.能够进行多元计算,但是没有优先级.&nbsp;&nbsp;2.BUG非常多,容易出现异常.&nbsp;&nbsp;3.更改了图形界面.nbsp;4.实现了代码重构,简化了代码.
-### (3)3.0版本
-#### 1.能够进行多元计算且存在优先级和括号关系.&nbsp;2.BUG较少.  
-### (4)4.0版本
-#### 1.删除保存历史纪录功能,自动保存历史纪录.&nbsp;2.新加入删除历史纪录功能  
-## 2.主要功能
-### 主要功能就是一个基本的计算器,具有如下功能:  
-#### 1.能完成包括括号任意输入的表达式的计算.
-#### 2.具有保存历史纪录和删除历史纪录的功能.
-#### 3.利用图形界面通过鼠标点击按键输入表达式.
-## 3.测试方法
-### 1.打开程序并执行,得到如下的图形界面:
-### 2.输入任意表达式按等号键,就可以得出结果.
-### 3.所有的历史结果保存在  
-HomeWork2\calculator 3.0\WpfApp5\bin\Debug\result.txt中.  
-保存结果如下图所示
-### 4.点击如图所示清空历史纪录按钮,可以看到历史纪录txt文件被清空.
-## 4.代码分析
-```
-    private void Button_Click(object sender, RoutedEventArgs e)
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+using System.IO;
+using MahApps.Metro.Controls;
+
+namespace WpfApp5
+{
+    /// <summary>
+    /// MainWindow.xaml 的交互逻辑
+    /// </summary>
+    public partial class MainWindow : MetroWindow
+    {
+
+        string formula = "";
+        List<string> expressions = new List<string>();
+        List<string> exp = new List<string>();
+
+        private int GetSignPriority(char sign) 
+        {
+            switch (sign)
+            {
+                case '(':                       
+                    return 0;
+                case '+':
+                case '-':
+                    return 1;
+                case '*':
+                case '/':
+                    return 2;
+            }
+            return -1;
+        }
+        private int GetTheTypeOfObj(string obj)
+        {
+            switch(obj)
+            {
+                case "+":
+                    return 1;
+                case "-":
+                    return 2;
+                case "*":
+                    return 3;
+                case "/":
+                    return 4;
+                default:
+                    return 0;
+            }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
             formula += Convert.ToString((sender as Button).Content);
             expressions.Add(Convert.ToString((sender as Button).Content));
             label1.Content += Convert.ToString((sender as Button).Content);
         }
-```
-由方法名称Button_Click可知该函数是点击按钮后的操作,将算术表达式赋给formula字符串并由label1所显示,同时存储在expressions方便输入历史纪录.    
-```
- private void Button_del_Click(object sender, RoutedEventArgs e)
+        private void Button_del_Click(object sender, RoutedEventArgs e)
         {
             if (formula.Length > 0)
             {
@@ -39,27 +73,18 @@ HomeWork2\calculator 3.0\WpfApp5\bin\Debug\result.txt中.
                 label1.Content = formula;
             }
         }
-```
-由方法名称Button_del_Click可知是点击del按钮后的操作,利用remove函数删除最后输入的字符.  
-```  
- private void Button_clear_Click(object sender, RoutedEventArgs e)
+        private void Button_clear_Click(object sender, RoutedEventArgs e)
         {
             formula = "";
             label1.Content = "";
         }
-```  
-由方法名称Button_clear_Click可知是点击C按钮后的操作,将formula和显示都清空.
-```  
-private void MenuItem_Click(object sender, RoutedEventArgs e)
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
             List<string> lines = new List<string>(File.ReadAllLines("result.txt"));
             lines.RemoveAt(0);
             File.WriteAllLines("result.txt", lines.ToArray());
-        }  
-```    
-该方法是文件清空操作,按下清空时可以将txt文件清空.
-```
- private void Button_equ_Click(object sender, RoutedEventArgs e)
+        }
+        private void Button_equ_Click(object sender, RoutedEventArgs e)
         {
             try
             {
@@ -193,12 +218,9 @@ private void MenuItem_Click(object sender, RoutedEventArgs e)
             catch
             { };
         }
-```
-该函数是按下=号键的操作,参考了晚上的相关教程,大致原理就是通过两个栈和一个队列来进行计算.计算步骤如下:  
-1.首先通过其中signStack栈和postfixExpressionQueue队列相互配合将输入的中缀表达式转换为后缀表达式存储在队列中.
-2.将后缀表达式利用GetTheConquenceStack栈将后缀表达式计算出来,就可以得到相应结果.
-3.整个方法的实现都由try包围,同时一个空catch,可以保证程序不出现异常.  
-## 5.程序参与者  
-软件工程营4班第二组全体成员,包括  
-队长:谭力铭  
-队员:曹善康,陈致利,李嘉诚,相雨.  
+        public MainWindow()
+        {
+                InitializeComponent();
+        }
+    }
+}
