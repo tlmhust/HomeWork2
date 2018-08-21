@@ -15,10 +15,13 @@
 #### 3.利用图形界面通过鼠标点击按键输入表达式.
 ## 3.测试方法
 ### 1.打开程序并执行,得到如下的图形界面:
+![avatar](https://raw.githubusercontent.com/tlmhust/HomeWork2/master/picture/1234.png)
 ### 2.输入任意表达式按等号键,就可以得出结果.
+![avatar](https://raw.githubusercontent.com/tlmhust/HomeWork2/master/picture/4567.png)
 ### 3.所有的历史结果保存在  
 HomeWork2\calculator 3.0\WpfApp5\bin\Debug\result.txt中.  
 保存结果如下图所示
+![avatar](https://raw.githubusercontent.com/tlmhust/HomeWork2/master/picture/789.png)
 ### 4.点击如图所示清空历史纪录按钮,可以看到历史纪录txt文件被清空.
 ## 4.代码分析
 ```
